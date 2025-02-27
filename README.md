@@ -10,6 +10,26 @@ This microservice follows a **REST API** architecture. Requests must be sent as 
 - **Default Port:** `3000`
 - **Response Format:** `JSON`
 
+## **Running the Microservice (locally)**
+
+Be sure to have node.js installed, then run this command to install the necessary packages:
+
+```bash
+npm install express axios dotenv
+```
+
+Then, start the microservice by running:
+
+```bash
+npm start
+```
+
+The console should display:
+
+```
+Weather microservice is running on port 3000.
+```
+
 ## **How to Programmatically REQUEST Data**
 
 **Endpoint:** `GET /api/weather`
@@ -89,13 +109,13 @@ get_weather();
 
 ### Example Response JSON
 
-```json
+```js
 {'city': 'Corvallis', 'temperature': 46, 'units': 'imperial', 'precipitation': 0, 'windSpeed': 2.9, 'humidity': 89, 'cloud': 0, 'description': 'Clear', 'updatedAt': '2025-02-25 20:30'}
 ```
 
 ### Example Response JSON (formatted)
 
-```json
+```js
 {
   city: 'Corvallis',
   temperature: 46,
@@ -139,25 +159,7 @@ In order to use it, you need to acquire an API key.
 
 <img src="images/api_key.png" width="800"/>
 
-## **Running the Microservice (locally)**
 
-Be sure to have node.js installed, then run this command to install the necessary packages:
-
-```bash
-npm install express axios dotenv
-```
-
-Then, start the microservice by running:
-
-```bash
-npm start
-```
-
-The console should display:
-
-```
-Weather microservice is running on port 3000.
-```
 
 ## **Sequence Diagram**
 
